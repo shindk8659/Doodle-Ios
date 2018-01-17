@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C2x-Cg-gbj">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NanumMyeongjo.ttf">
+            <string>NanumMyeongjo</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--SplashVC-->
+        <scene sceneID="82a-MU-1FT">
+            <objects>
+                <viewController id="C2x-Cg-gbj" customClass="SplashVC" customModule="Doodle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u1P-Wd-XEv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" image="background35" translatesAutoresizingMaskIntoConstraints="NO" id="o7H-f1-bUC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="글적" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFK-G7-Yz5">
+                                <rect key="frame" x="160" y="267.5" width="55" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="3a7-Mh-U57"/>
+                                    <constraint firstAttribute="width" constant="55" id="NUX-XS-GvH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NanumMyeongjo" family="NanumMyeongjo" pointSize="28"/>
+                                <color key="textColor" red="0.29803921568627451" green="0.29803921568627451" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="당신의 끄적임이 글이 되는 이곳" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNL-7S-bIE">
+                                <rect key="frame" x="79" y="317.5" width="218" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Fgs-Cg-9D8"/>
+                                    <constraint firstAttribute="width" constant="218" id="LxR-PE-esy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NanumMyeongjo" family="NanumMyeongjo" pointSize="16"/>
+                                <color key="textColor" red="0.41176470588235292" green="0.41176470588235292" blue="0.41176470588235292" alpha="0.65000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wFK-G7-Yz5" firstAttribute="centerX" secondItem="f0t-4a-VSz" secondAttribute="centerX" id="1T9-Hz-380"/>
+                            <constraint firstItem="o7H-f1-bUC" firstAttribute="leading" secondItem="f0t-4a-VSz" secondAttribute="leading" id="3z0-Mw-a7T"/>
+                            <constraint firstItem="wFK-G7-Yz5" firstAttribute="centerY" secondItem="f0t-4a-VSz" secondAttribute="centerY" constant="-60" id="49x-K3-eDW"/>
+                            <constraint firstItem="o7H-f1-bUC" firstAttribute="bottom" secondItem="f0t-4a-VSz" secondAttribute="bottom" id="G7o-du-qvf"/>
+                            <constraint firstItem="o7H-f1-bUC" firstAttribute="top" secondItem="u1P-Wd-XEv" secondAttribute="top" id="OYI-Kp-azt"/>
+                            <constraint firstItem="RNL-7S-bIE" firstAttribute="top" secondItem="wFK-G7-Yz5" secondAttribute="bottom" constant="18" id="Ovn-UJ-cWw"/>
+                            <constraint firstItem="RNL-7S-bIE" firstAttribute="centerX" secondItem="f0t-4a-VSz" secondAttribute="centerX" id="eFB-vN-QKg"/>
+                            <constraint firstItem="o7H-f1-bUC" firstAttribute="trailing" secondItem="f0t-4a-VSz" secondAttribute="trailing" id="ezP-88-AJ0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="f0t-4a-VSz"/>
+                    </view>
+                    <connections>
+                        <outlet property="mainLabel" destination="wFK-G7-Yz5" id="Di8-61-7rV"/>
+                        <outlet property="subLabel" destination="RNL-7S-bIE" id="wvT-BO-OPc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2TX-9s-1sb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="175" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background35" width="375" height="667"/>
+    </resources>
+</document>
