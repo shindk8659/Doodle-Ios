@@ -10,6 +10,16 @@ import UIKit
 
 class MainVC: UIViewController{
     
+   
+    @IBAction func alertBtn(_ sender: Any) {
+        let alert = UIAlertController(title: "알람", message: "준비중입니다.", preferredStyle: UIAlertControllerStyle.alert)
+        
+        // add an action (button)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        
+        // show the alert
+        self.present(alert, animated: true, completion: nil)
+    }
     @IBOutlet var postViewBtn: UIButton!
     @IBOutlet var appreciateViewBtn: UIButton!
     @IBOutlet var mypageViewBtn: UIButton!

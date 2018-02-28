@@ -8,8 +8,9 @@
 
 import UIKit
 import SwiftyJSON
+import MessageUI
 
-class UserPostListViewController: UIViewController {
+class UserPostListViewController: UIViewController , MFMailComposeViewControllerDelegate{
     let token = UserDefaults.standard.string(forKey: "token")
     let myNickname = UserDefaults.standard.string(forKey: "nickname")
     var userpost2 : UserPostResult?
@@ -26,6 +27,19 @@ class UserPostListViewController: UIViewController {
     
     @IBOutlet weak var userpostlistcollectionView: UICollectionView!
     
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        switch result {
+        case .cancelled:
+            print("취소")
+        case .saved:
+            print("임시저장")
+        case .sent:
+            print("전송완료")
+        default:
+            print("전송실패")
+        }
+        dismiss(animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         let networkManager = UserPostsNetworkManager(self)
         let header = gsno(token)
@@ -130,10 +144,56 @@ extension UserPostListViewController: UICollectionViewDataSource {
         cell.scrap.addTarget(self, action: #selector(scrapUnscrap(sender:)), for: .touchUpInside)
         cell.comment.tag = indexPath.item + ListstartIndex
         cell.comment.addTarget(self, action: #selector(goToComment(sender:)), for: .touchUpInside)
+        cell.EditBtn.tag = indexPath.item + ListstartIndex
+        cell.EditBtn.addTarget(self, action: #selector(editbuttonTapped(sender:)), for: .touchUpInside)
         
         return cell
         
     }
+    
+    @objc func editbuttonTapped(sender:UIButton ) {
+        
+        func mailfunc(){
+            if MFMailComposeViewController.canSendMail(){
+                print("sdfsdf")
+                var reportUserIdx :Int = 0
+                var reportIdx:Int = 0
+                
+                reportIdx = self.userpostlist2[sender.tag].idx!
+                reportUserIdx = self.userpostlist2[sender.tag].user_idx!
+                
+                let mail = MFMailComposeViewController()
+                mail.mailComposeDelegate = self
+                mail.setToRecipients(["shindk8659@naver.com"])
+                mail.setSubject("신고합니다.")
+                mail.setMessageBody("유저인덱스:\(reportUserIdx),게시물인덱스:\(reportIdx) , 신고합니다.", isHTML: false)
+                self.present(mail, animated: true)
+            } else {
+                let alert = UIAlertController(title: "메일 보내기 실패", message: "메일 어플리케이션에서 메일설정을 해주세요!", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+                print("메일 보내기 실패")
+            }
+        }
+    
+        
+        let alertController = UIAlertController(title: nil, message: nil, preferredStyle: UIAlertControllerStyle.actionSheet)
+        
+        
+        let reportAction = UIAlertAction(title: "신고 하기", style: .default, handler: {(alert: UIAlertAction!) in mailfunc()})
+        let somethingAction = UIAlertAction(title: "내 폰으로 저장하기", style: .default, handler: {(alert: UIAlertAction!) in print("여기 함수 넣으면됨")})
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: {(alert: UIAlertAction!) in print("cancel")})
+        alertController.addAction(reportAction)
+        alertController.addAction(somethingAction)
+        alertController.addAction(cancelAction)
+        
+        DispatchQueue.main.async {
+            self.present(alertController, animated: true, completion:{})
+            
+        }
+    }
+    
     @objc func likeUnlike(sender: UIButton) {
         let model = AppreciateManager(self)
         likeIndex = sender.tag

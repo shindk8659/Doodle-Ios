@@ -11,7 +11,7 @@ import UIKit
 class RankAppreciateCell: UITableViewCell {
     
     @IBOutlet var rankLabel: UILabel!
-    
+    @IBOutlet var reportBtn: UIButton!
     @IBOutlet var appreciateImage: UIImageView!
     @IBOutlet var gongGam: UIButton!
     @IBOutlet var comment: UIButton!

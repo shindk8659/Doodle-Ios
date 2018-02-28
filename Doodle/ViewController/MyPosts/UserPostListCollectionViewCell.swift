@@ -18,8 +18,7 @@ class UserPostListCollectionViewCell: UICollectionViewCell {
     @IBOutlet var gongGam: UIButton!
     @IBOutlet var comment: UIButton!
     @IBOutlet var scrap: UIButton!
-    
-    @IBOutlet weak var editBtn: UIButton!
+    @IBOutlet weak var EditBtn: UIButton!
     
     
     

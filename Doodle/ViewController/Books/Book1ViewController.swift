@@ -10,6 +10,15 @@ import UIKit
 
 class Book1ViewController: UIViewController {
 
+    @IBAction func sailBtn(_ sender: Any) {
+        let alert = UIAlertController(title: "구매하기", message: "준비중입니다.", preferredStyle: UIAlertControllerStyle.alert)
+        
+        // add an action (button)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        
+        // show the alert
+        self.present(alert, animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

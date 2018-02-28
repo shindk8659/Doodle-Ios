@@ -10,6 +10,53 @@ import UIKit
 
 class SettingViewController: UIViewController {
 
+    @IBAction func DeleteBtn(_ sender: Any) {
+        let alert = UIAlertController(title: "계정탈퇴", message: "준비중입니다.", preferredStyle: UIAlertControllerStyle.alert)
+        
+        // add an action (button)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        
+        // show the alert
+        self.present(alert, animated: true, completion: nil)
+    }
+    @IBAction func changeNickname(_ sender: Any) {
+        let alert = UIAlertController(title: "필명 변경", message: "준비중입니다.", preferredStyle: UIAlertControllerStyle.alert)
+        
+        // add an action (button)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        
+        // show the alert
+        self.present(alert, animated: true, completion: nil)
+    }
+    @IBAction func changeEmail(_ sender: Any) {
+        let alert = UIAlertController(title: "이메일 변경", message: "준비중입니다.", preferredStyle: UIAlertControllerStyle.alert)
+        
+        // add an action (button)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        
+        // show the alert
+        self.present(alert, animated: true, completion: nil)
+    }
+    @IBAction func changePassword(_ sender: Any) {
+        
+        let alert = UIAlertController(title: "비밀번호 변경", message: "준비중입니다.", preferredStyle: UIAlertControllerStyle.alert)
+        
+        // add an action (button)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        
+        // show the alert
+        self.present(alert, animated: true, completion: nil)
+    }
+    @IBAction func reportuseropBtn(_ sender: Any) {
+        let alert = UIAlertController(title: "의견보내기", message: "준비중입니다.", preferredStyle: UIAlertControllerStyle.alert)
+        
+        // add an action (button)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        
+        // show the alert
+        self.present(alert, animated: true, completion: nil)
+    
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         setNaviBar()

@@ -10,6 +10,7 @@ import UIKit
 class AppreciateCell: UITableViewCell {
     
     
+    @IBOutlet var reportBtn: UIButton!
     @IBOutlet var AppreciateImage: UIImageView!
     @IBOutlet var gongGam: UIButton!
     @IBOutlet var comment: UIButton!

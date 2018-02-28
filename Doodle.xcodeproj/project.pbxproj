@@ -75,6 +75,7 @@
 		C2BFA66C1FFB753D00D8A395 /* CustomExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BFA66B1FFB753D00D8A395 /* CustomExtension.swift */; };
 		C2C8324E200088EF00BA7158 /* MainView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2C8324D200088EF00BA7158 /* MainView.storyboard */; };
 		C2D04EC61FFA33DD005FBB4A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D04EC51FFA33DD005FBB4A /* SignUpViewController.swift */; };
+		C2F0B59C202ADB7C00F2E588 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2F0B59B202ADB7C00F2E588 /* MessageUI.framework */; };
 		D101AC5520023FA500778135 /* FilterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D101AC5420023FA500778135 /* FilterView.xib */; };
 		D101AC5920024AE600778135 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D101AC5820024AE600778135 /* FilterView.swift */; };
 		D106FCE8200516D8005DCC31 /* DailyBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = D106FCE7200516D8005DCC31 /* DailyBackground.swift */; };
@@ -176,6 +177,7 @@
 		C2BFA66B1FFB753D00D8A395 /* CustomExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomExtension.swift; sourceTree = "<group>"; };
 		C2C8324D200088EF00BA7158 /* MainView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainView.storyboard; sourceTree = "<group>"; };
 		C2D04EC51FFA33DD005FBB4A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		C2F0B59B202ADB7C00F2E588 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		D101AC5420023FA500778135 /* FilterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterView.xib; sourceTree = "<group>"; };
 		D101AC5820024AE600778135 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 		D106FCE7200516D8005DCC31 /* DailyBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyBackground.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2F0B59C202ADB7C00F2E588 /* MessageUI.framework in Frameworks */,
 				934798C3169AA914032BDBBA /* Pods_Doodle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,6 +222,7 @@
 		16B90399DD34DE6EA5B3FAB8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C2F0B59B202ADB7C00F2E588 /* MessageUI.framework */,
 				9BA851EA7DBCE6A7EFC867DC /* Pods_Doodle.framework */,
 			);
 			name = Frameworks;
@@ -871,11 +875,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CXVMJWVF32;
+				DEVELOPMENT_TEAM = KB65UR5HX8;
 				INFOPLIST_FILE = Doodle/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = lee.Doodle;
+				PRODUCT_BUNDLE_IDENTIFIER = doodle.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -888,11 +892,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CXVMJWVF32;
+				DEVELOPMENT_TEAM = KB65UR5HX8;
 				INFOPLIST_FILE = Doodle/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = lee.Doodle;
+				PRODUCT_BUNDLE_IDENTIFIER = doodle.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

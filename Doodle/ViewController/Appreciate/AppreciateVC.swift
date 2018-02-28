@@ -8,8 +8,9 @@
 
 import Foundation
 import UIKit
+import MessageUI
 
-class AppreciateVC : UIViewController {
+class AppreciateVC : UIViewController , MFMailComposeViewControllerDelegate {
     
     @IBOutlet var appreciateTableView: UITableView!
     @IBOutlet var allMenuButton: UIButton!
@@ -28,6 +29,20 @@ class AppreciateVC : UIViewController {
     
     let token = UserDefaults.standard.string(forKey: "token")
     let myNickname = UserDefaults.standard.string(forKey: "nickname")
+    
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        switch result {
+        case .cancelled:
+            print("취소")
+        case .saved:
+            print("임시저장")
+        case .sent:
+            print("전송완료")
+        default:
+            print("전송실패")
+        }
+        dismiss(animated: true, completion: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -305,6 +320,9 @@ extension AppreciateVC : UITableViewDelegate, UITableViewDataSource {
                 cell.comment.addTarget(self, action: #selector(goToComment(sender:)), for: .touchUpInside)
                 cell.thisNickname.tag = indexPath.row
                 cell.thisNickname.addTarget(self, action: #selector(goToProfile(sender:)), for: .touchUpInside)
+                cell.reportBtn.tag = indexPath.row
+                cell.reportBtn.addTarget(self, action: #selector(editbuttonTapped(sender:)), for: .touchUpInside)
+                
                 return cell
             }
             else {
@@ -351,6 +369,8 @@ extension AppreciateVC : UITableViewDelegate, UITableViewDataSource {
                 cell.comment.addTarget(self, action: #selector(goToComment(sender:)), for: .touchUpInside)
                 cell.thisNickname.tag = indexPath.row + 3
                 cell.thisNickname.addTarget(self, action: #selector(goToProfile(sender:)), for: .touchUpInside)
+                cell.reportBtn.tag = indexPath.row
+                cell.reportBtn.addTarget(self, action: #selector(editbuttonTapped(sender:)), for: .touchUpInside)
                 return cell
             }
         } else {
@@ -404,8 +424,51 @@ extension AppreciateVC : UITableViewDelegate, UITableViewDataSource {
                 cell.comment.addTarget(self, action: #selector(goToComment(sender:)), for: .touchUpInside)
                 cell.thisNickname.tag = indexPath.row
                 cell.thisNickname.addTarget(self, action: #selector(goToProfile(sender:)), for: .touchUpInside)
+                cell.reportBtn.tag = indexPath.row
+                cell.reportBtn.addTarget(self, action: #selector(editbuttonTapped(sender:)), for: .touchUpInside)
                 return cell
             }
         }
+    }
+    @objc func editbuttonTapped(sender:UIButton ) {
+        let alertController = UIAlertController(title: nil, message: nil, preferredStyle: UIAlertControllerStyle.actionSheet)
+        
+        func mailfunc(){
+            if MFMailComposeViewController.canSendMail(){
+                print("sdfsdf")
+                var reportUserIdx :Int = 0
+                var reportIdx:Int = 0
+                
+                reportIdx = self.appreciateResultList[sender.tag].idx!
+                reportUserIdx = self.appreciateResultList[sender.tag].user_idx!
+                
+                let mail = MFMailComposeViewController()
+                mail.mailComposeDelegate = self
+                mail.setToRecipients(["shindk8659@naver.com"])
+                mail.setSubject("신고합니다.")
+                mail.setMessageBody("유저인덱스:\(reportUserIdx),게시물인덱스:\(reportIdx) , 신고합니다.", isHTML: false)
+                self.present(mail, animated: true)
+            } else {
+                let alert = UIAlertController(title: "메일 보내기 실패", message: "메일 어플리케이션에서 메일설정을 해주세요!", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+                print("메일 보내기 실패")
+            }
+        }
+        
+        
+        let reportAction = UIAlertAction(title: "신고 하기", style: .default, handler: {(alert: UIAlertAction!) in mailfunc()})
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: {(alert: UIAlertAction!) in print("cancel")})
+        
+        alertController.addAction(reportAction)
+        alertController.addAction(cancelAction)
+        
+        DispatchQueue.main.async {
+            self.present(alertController, animated: true, completion:{})
+            
+            
+        }
+        
     }
 }

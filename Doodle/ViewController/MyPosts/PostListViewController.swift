@@ -206,6 +206,7 @@ extension PostListViewController: UICollectionViewDataSource {
         let networkManager = DeleteManager(self)
         let header = self.gsno(self.token)
         
+       
         let shareAction = UIAlertAction(title: "공유 하기", style: .default, handler: {(alert: UIAlertAction!) in print("share")})
         let deleteAction = UIAlertAction(title: "삭제 하기", style: .destructive, handler: {(alert: UIAlertAction!) in
             networkManager.Delete(idx: index, token: header, code: code)
@@ -213,6 +214,7 @@ extension PostListViewController: UICollectionViewDataSource {
             
         })
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: {(alert: UIAlertAction!) in print("cancel")})
+       
         alertController.addAction(shareAction)
         alertController.addAction(deleteAction)
         alertController.addAction(cancelAction)
