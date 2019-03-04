@@ -6,7 +6,7 @@
   매일매일 추가되는 오늘의 배경에 내 글을 써봅시다!
 * 글적 워크플로우
 
-![workflow](/Doodle_iOS/image/workflow.png)
+![workflow](/image/workflow.png)
 * 사용 라이브러리 
 
 Alamofire, ObjectMapper, AlamofireObjectMapper, Kingfisher, SwiftyJSON, Toast-Swift
