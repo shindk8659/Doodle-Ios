@@ -7,9 +7,8 @@
 * 글적 워크플로우
 
 ![workflow](/Users/shindongkyu/Desktop/신동규파일/글적v1/Doodle_iOS/image/workflow.png)
-
+=======
 * 사용 라이브러리 
 
-  Alamofire, ObjectMapper, AlamofireObjectMapper, Kingfisher, SwiftyJSON, Toast-Swift
+Alamofire, ObjectMapper, AlamofireObjectMapper, Kingfisher, SwiftyJSON, Toast-Swift
 
-  
