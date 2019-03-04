@@ -6,7 +6,7 @@
   매일매일 추가되는 오늘의 배경에 내 글을 써봅시다!
 * 글적 워크플로우
 
-![워크플로우-1](/Users/shindongkyu/Desktop/신동규파일/글적v1/Doodle_iOS/image/워크플로우-1.png)
+![workflow](/Users/shindongkyu/Desktop/신동규파일/글적v1/Doodle_iOS/image/workflow.png)
 
 * 사용 라이브러리 
 
