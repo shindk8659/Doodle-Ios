@@ -55,9 +55,6 @@
 		C226ECAF2008E77D000FE144 /* EditProfileNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C226ECAE2008E77D000FE144 /* EditProfileNetworkManager.swift */; };
 		C226ECB12008E792000FE144 /* UserPostsNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C226ECB02008E792000FE144 /* UserPostsNetworkManager.swift */; };
 		C226ECB32008E7AD000FE144 /* MyPostsNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C226ECB22008E7AD000FE144 /* MyPostsNetworkManager.swift */; };
-		C260FD091FFF57FE0050F347 /* NanumMyeongjo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C260FD081FFF57E90050F347 /* NanumMyeongjo.ttf */; };
-		C260FD0A1FFF57FE0050F347 /* NanumMyeongjoBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C260FD061FFF57E60050F347 /* NanumMyeongjoBold.ttf */; };
-		C260FD0B1FFF57FE0050F347 /* NanumMyeongjoExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C260FD071FFF57E80050F347 /* NanumMyeongjoExtraBold.ttf */; };
 		C29294821FFE3136008C6728 /* TutorialViewController6.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29294811FFE3136008C6728 /* TutorialViewController6.swift */; };
 		C29294841FFE3194008C6728 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29294831FFE3194008C6728 /* LoginViewController.swift */; };
 		C29294861FFE4D57008C6728 /* NetworkDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29294851FFE4D57008C6728 /* NetworkDelegate.swift */; };
@@ -82,17 +79,6 @@
 		D113705B20009A3B005FD573 /* WritingViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D113705A20009A3A005FD573 /* WritingViewController1.swift */; };
 		D113705D2000A74F005FD573 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D113705C2000A74F005FD573 /* EditView.swift */; };
 		D113705F2000A75E005FD573 /* EditView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D113705E2000A75E005FD573 /* EditView.xib */; };
-		D11371A020011A32005FD573 /* NanumBarunGothicBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D113719D20011A30005FD573 /* NanumBarunGothicBold.ttf */; };
-		D11371A120011A32005FD573 /* NanumBarunGothicLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D113719E20011A30005FD573 /* NanumBarunGothicLight.ttf */; };
-		D11371A220011A32005FD573 /* NanumBarunGothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D113719F20011A31005FD573 /* NanumBarunGothic.ttf */; };
-		D11371AB20011AA9005FD573 /* Uhbee NaHyun Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D11371A320011AA6005FD573 /* Uhbee NaHyun Bold.ttf */; };
-		D11371AC20011AA9005FD573 /* BMYEONSUNG_ttf.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D11371A420011AA6005FD573 /* BMYEONSUNG_ttf.ttf */; };
-		D11371AD20011AA9005FD573 /* Goyang.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D11371A520011AA6005FD573 /* Goyang.ttf */; };
-		D11371AE20011AA9005FD573 /* Uhbee NaHyun.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D11371A620011AA7005FD573 /* Uhbee NaHyun.ttf */; };
-		D11371AF20011AA9005FD573 /* NanumPen.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D11371A720011AA7005FD573 /* NanumPen.ttf */; };
-		D11371B020011AA9005FD573 /* tvN 즐거운이야기 Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D11371A820011AA8005FD573 /* tvN 즐거운이야기 Light.ttf */; };
-		D11371B120011AA9005FD573 /* tvN 즐거운이야기 Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D11371A920011AA8005FD573 /* tvN 즐거운이야기 Bold.ttf */; };
-		D11371B220011AA9005FD573 /* tvN 즐거운이야기 Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D11371AA20011AA9005FD573 /* tvN 즐거운이야기 Medium.ttf */; };
 		D11371B5200133F6005FD573 /* dataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11371B4200133F6005FD573 /* dataProtocol.swift */; };
 		D19EF6902009660C00A8D6C4 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19EF68F2009660C00A8D6C4 /* BookViewController.swift */; };
 		D19EF6922009666B00A8D6C4 /* SupportingFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19EF6912009666B00A8D6C4 /* SupportingFile.swift */; };
@@ -155,9 +141,6 @@
 		C226ECAE2008E77D000FE144 /* EditProfileNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileNetworkManager.swift; sourceTree = "<group>"; };
 		C226ECB02008E792000FE144 /* UserPostsNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostsNetworkManager.swift; sourceTree = "<group>"; };
 		C226ECB22008E7AD000FE144 /* MyPostsNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPostsNetworkManager.swift; sourceTree = "<group>"; };
-		C260FD061FFF57E60050F347 /* NanumMyeongjoBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumMyeongjoBold.ttf; sourceTree = "<group>"; };
-		C260FD071FFF57E80050F347 /* NanumMyeongjoExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumMyeongjoExtraBold.ttf; sourceTree = "<group>"; };
-		C260FD081FFF57E90050F347 /* NanumMyeongjo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumMyeongjo.ttf; sourceTree = "<group>"; };
 		C29294811FFE3136008C6728 /* TutorialViewController6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController6.swift; sourceTree = "<group>"; };
 		C29294831FFE3194008C6728 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C29294851FFE4D57008C6728 /* NetworkDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDelegate.swift; sourceTree = "<group>"; };
@@ -184,17 +167,6 @@
 		D113705A20009A3A005FD573 /* WritingViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingViewController1.swift; sourceTree = "<group>"; };
 		D113705C2000A74F005FD573 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		D113705E2000A75E005FD573 /* EditView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditView.xib; sourceTree = "<group>"; };
-		D113719D20011A30005FD573 /* NanumBarunGothicBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunGothicBold.ttf; sourceTree = "<group>"; };
-		D113719E20011A30005FD573 /* NanumBarunGothicLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunGothicLight.ttf; sourceTree = "<group>"; };
-		D113719F20011A31005FD573 /* NanumBarunGothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunGothic.ttf; sourceTree = "<group>"; };
-		D11371A320011AA6005FD573 /* Uhbee NaHyun Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Uhbee NaHyun Bold.ttf"; sourceTree = "<group>"; };
-		D11371A420011AA6005FD573 /* BMYEONSUNG_ttf.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BMYEONSUNG_ttf.ttf; sourceTree = "<group>"; };
-		D11371A520011AA6005FD573 /* Goyang.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Goyang.ttf; sourceTree = "<group>"; };
-		D11371A620011AA7005FD573 /* Uhbee NaHyun.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Uhbee NaHyun.ttf"; sourceTree = "<group>"; };
-		D11371A720011AA7005FD573 /* NanumPen.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumPen.ttf; sourceTree = "<group>"; };
-		D11371A820011AA8005FD573 /* tvN 즐거운이야기 Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "tvN 즐거운이야기 Light.ttf"; sourceTree = "<group>"; };
-		D11371A920011AA8005FD573 /* tvN 즐거운이야기 Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "tvN 즐거운이야기 Bold.ttf"; sourceTree = "<group>"; };
-		D11371AA20011AA9005FD573 /* tvN 즐거운이야기 Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "tvN 즐거운이야기 Medium.ttf"; sourceTree = "<group>"; };
 		D11371B4200133F6005FD573 /* dataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataProtocol.swift; sourceTree = "<group>"; };
 		D19EF68F2009660C00A8D6C4 /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
 		D19EF6912009666B00A8D6C4 /* SupportingFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportingFile.swift; sourceTree = "<group>"; };
@@ -320,20 +292,6 @@
 		C2B977DE1FFEA29F00CF73FA /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				C260FD081FFF57E90050F347 /* NanumMyeongjo.ttf */,
-				C260FD061FFF57E60050F347 /* NanumMyeongjoBold.ttf */,
-				C260FD071FFF57E80050F347 /* NanumMyeongjoExtraBold.ttf */,
-				D113719F20011A31005FD573 /* NanumBarunGothic.ttf */,
-				D113719D20011A30005FD573 /* NanumBarunGothicBold.ttf */,
-				D113719E20011A30005FD573 /* NanumBarunGothicLight.ttf */,
-				D11371A420011AA6005FD573 /* BMYEONSUNG_ttf.ttf */,
-				D11371A520011AA6005FD573 /* Goyang.ttf */,
-				D11371A720011AA7005FD573 /* NanumPen.ttf */,
-				D11371A920011AA8005FD573 /* tvN 즐거운이야기 Bold.ttf */,
-				D11371A820011AA8005FD573 /* tvN 즐거운이야기 Light.ttf */,
-				D11371AA20011AA9005FD573 /* tvN 즐거운이야기 Medium.ttf */,
-				D11371A320011AA6005FD573 /* Uhbee NaHyun Bold.ttf */,
-				D11371A620011AA7005FD573 /* Uhbee NaHyun.ttf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -571,24 +529,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D101AC5520023FA500778135 /* FilterView.xib in Resources */,
-				C260FD091FFF57FE0050F347 /* NanumMyeongjo.ttf in Resources */,
-				D11371AC20011AA9005FD573 /* BMYEONSUNG_ttf.ttf in Resources */,
-				C260FD0A1FFF57FE0050F347 /* NanumMyeongjoBold.ttf in Resources */,
-				C260FD0B1FFF57FE0050F347 /* NanumMyeongjoExtraBold.ttf in Resources */,
-				D11371AE20011AA9005FD573 /* Uhbee NaHyun.ttf in Resources */,
-				D11371A220011A32005FD573 /* NanumBarunGothic.ttf in Resources */,
-				D11371AD20011AA9005FD573 /* Goyang.ttf in Resources */,
-				D11371A020011A32005FD573 /* NanumBarunGothicBold.ttf in Resources */,
-				D11371A120011A32005FD573 /* NanumBarunGothicLight.ttf in Resources */,
 				C2BBEF9C1FF89C2600A0B3EA /* TutorialLogin.storyboard in Resources */,
-				D11371B120011AA9005FD573 /* tvN 즐거운이야기 Bold.ttf in Resources */,
-				D11371AF20011AA9005FD573 /* NanumPen.ttf in Resources */,
 				C2C8324E200088EF00BA7158 /* MainView.storyboard in Resources */,
 				C2BBEFA11FF89C2600A0B3EA /* LaunchScreen.storyboard in Resources */,
-				D11371B020011AA9005FD573 /* tvN 즐거운이야기 Light.ttf in Resources */,
-				D11371B220011AA9005FD573 /* tvN 즐거운이야기 Medium.ttf in Resources */,
 				D113705F2000A75E005FD573 /* EditView.xib in Resources */,
-				D11371AB20011AA9005FD573 /* Uhbee NaHyun Bold.ttf in Resources */,
 				C2BBEF9E1FF89C2600A0B3EA /* Assets.xcassets in Resources */,
 				B30984032007E61400BA3BFF /* Splash.storyboard in Resources */,
 			);
